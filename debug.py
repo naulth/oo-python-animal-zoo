@@ -1,16 +1,18 @@
 from lib.animal import *
 from lib.zoo import *
-
+import ipdb
 # code here
 
 # e.g.  
-#   z1 = Zoo( 'Micke Grove Zoo', 'Lodi, CA' )
-#   a1 = Animal( 'Lion', 75, 'Luke', z1 )
+micke_grove = Zoo( 'Micke Grove Zoo', 'Lodi, CA' )
+Animal( 'Tiger', 75, 'Luke', micke_grove )
+Animal( 'Tiger', 75, 'Boulder', micke_grove )
+Animal( 'Snake', 25, 'Jake', micke_grove)
 
-
-
-
+san_diego = Zoo( 'San Diego Zoo', 'San Diego, CA' )
+Animal( 'Lion', 75, 'Leia', san_diego )
+Animal( 'Dog', 75, 'Joy', san_diego )
 
 
 # do not remove 
-import ipdb; ipdb.set_trace()
+ipdb.set_trace()
